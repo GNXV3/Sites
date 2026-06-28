@@ -1,0 +1,94 @@
+/* --- الإعدادات الأساسية --- */
+body {
+    font-family: sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- 1. استخدام Flexbox لشريط التنقل --- */
+.site-header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 1200px; /* للتحكم بعرض الترويسة */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header h1 {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+/* تطبيق Flexbox هنا */
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* توزيع المسافات بالتساوي */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    background-color: #3b82f6;
+}
+
+/* --- 3. توسيط المحتوى الرئيسي وإعطائه حشوة مريحة --- */
+.main-content {
+    max-width: 1000px; /* تحديد أقصى عرض */
+    margin: 40px auto; /* توسيط عمودي وأفقي */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.hero-section, .intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- 2. استخدام CSS Grid لترتيب البطاقات --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* إنشاء 3 أعمدة متساوية لسطح المكتب */
+    gap: 25px; /* المسافة بين البطاقات */
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-top: 0;
+}
+
+/* --- تذييل الصفحة --- */
+.site-footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
