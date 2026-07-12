@@ -1,6 +1,7 @@
-from django.apps import AppConfig
+from django.urls import path 
+from . import views 
 
-
-class PagesConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'pages'
+urlpatterns = [
+    path('', views.home, name='home'),
+    path ('leagues/', views.league, name='leagues'),
+]
